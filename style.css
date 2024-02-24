@@ -33,6 +33,56 @@ body{
     background-position: center;
 }
 
+.container
+{
+ padding: 10px 10%;
+}
+ nav
+ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: var(--bgcolor);
+ }
+
+ nav ul li
+ {
+      display: inline-block;
+      margin: 20px 30px;
+      list-style: none;
+ }
+ 
+nav ul li a
+{
+ text-decoration: none;
+ color: var(--fgcolor);
+ font-size: 20px;
+ position: relative;
+
+}
+
+nav ul li a::after
+{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: crimson;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: .5s;
+}
+
+nav ul li a:hover::after
+{
+ width: 100%;
 
 
+}
 
