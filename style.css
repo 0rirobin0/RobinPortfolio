@@ -1,0 +1,38 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+:root{
+
+    --bgcolor: #080808;
+    --fgcolor: #fff;
+    --darkimg: url(images/Background_dark.png);
+
+}
+body{
+  background: var(--bgcolor);
+  color: var(--fgcolor);
+  
+
+
+
+
+}
+
+
+#header
+{
+
+    background-image: var(--darkimg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
