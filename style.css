@@ -231,7 +231,7 @@ padding: 40px;
 font-size: 13px;
 font-weight: 300;
 border-radius: 10px;
-border-right: 10px;
+transition:  transform 0.5s ;
 
 }
 .services-list div h2
@@ -253,4 +253,14 @@ border-right: 10px;
 {
     font-size: 50px;
     margin-bottom: 30px ;
+}
+.services-list div:hover
+{
+    background: crimson;
+    transform: translateY(-10px);
+    
+}
+.services-list div:hover a
+{
+    color: #fff;
 }
