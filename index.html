@@ -1,35 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <!-- Fontawesome Icon -->
+    <script src="https://kit.fontawesome.com/d321f01484.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-   
+
     <div id="header">
-    
+
 
         <div class="container">
             <nav>
-         
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Porfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#">Porfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </nav>
         </div>
         <div class="header_text">
 
-        <p>Software Engineer</p>
-        <h1>Hi,Im Md Robiul Islam Robin</h1>
+            <p>Software Engineer</p>
+            <h1>Hi,Im <br> Md Robiul Islam <span>Robin</span> <br>from SUST,Bangladesh</h1>
         </div>
     </div>
 
-     
+    <!-- ====================ABOUT=================== -->
+    <div id="About">
+
+        <div class="container">
+            <div class="row">
+                <div class="about_col_1">
+                    <img src="/images/dp.png" alt="">
+                </div>
+                <div class="about_col_2">
+                    <h1 class="sub-tittle">About Me</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, quod quidem asperiores
+                        perspiciatis magnam recusandae! Accusamus recusandae repellat illo harum porro dicta reiciendis
+                        nam mollitia nulla inventore. Omnis, quo cumque?</p>
+                    <div class="tab-tittle">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Experinces')">Experinces</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br>Designing Web/App Interfaces</li>
+                            <li><span>Flutter Development</span> <br>Cross-Platform Android/iOS App Development</li>
+                            <li><span>Web Development</span><br>Front-End Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experinces">
+                        <ul>
+                            <li><span>2022-current</span> <br>Designed a bunch of App interfaces</li>
+                            <li><span>2023-current</span> <br>Developed some apps</li>
+                            <li><span>2023-current</span><br>Works on some Front-Ends</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Bsc.Engg in SWE (2022-2026)</span> <br>Shahjalal University Of Science And
+                                Technology</li>
+                            <li><span>HSC Grade 5.00 (2019-2020)</span> <br>Barishal Board,Bangladesh</li>
+                            <li><span>SSC Grade 5.00 (2017-2018)</span><br>Barishal Board,Bangladesh</li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================Services======================== -->
+    <div id="Services">
+
+        <div class="container">
+
+            <h1 class="sub-tittle">My Services</h1>
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                <h2>Flutter Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea saepe suscipit repudiandae! Rerum, fuga.
+                    Placeat ducimus!</p>
+                
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea saepe suscipit repudiandae! Rerum, fuga.
+                        Placeat ducimus!</p>
+                    
+                        <a href="#">Learn More</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-paint-roller"></i>
+                        <h2>UI/UX Designing</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea saepe suscipit repudiandae! Rerum, fuga.
+                            Placeat ducimus!</p>
+                        
+                            <a href="#">Learn More</a>
+                        </div>
+        
+                    
+             </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
 </body>
+
 </html>
