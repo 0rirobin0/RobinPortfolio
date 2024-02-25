@@ -37,6 +37,7 @@ body{
     
 }
 
+
 .container
 {
  padding: 10px 10%;
@@ -106,6 +107,24 @@ font-size: 40px;
 {
     color: crimson ;
 }
+
+.sociallinks a i
+{   
+    text-decoration: none;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #fff;
+    transition: 0.4s;
+}
+.sociallinks a :hover
+{
+    color: crimson;
+    transform:translateY(-5px);
+ 
+    
+}
+
 
 
 /*  ====================ABOUT=================== */
