@@ -309,4 +309,55 @@ transition:  transform 0.5s ;
     width: 100%;
     display: block;
     border-radius: 10px;
+    transition: 0.5s;
+}
+.layer
+{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),crimson);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40x;
+    text-align: center;
+    font-size: 14px;
+    transition: 0.5s;
+   
+}
+.layer h3
+{
+font-size: 500 ;
+margin-bottom: 20px;
+
+
+}
+.layer a
+{
+    margin-top: 20px;
+    text-decoration: none;
+    color: crimson;
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    background:#fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+
+
+}
+.work:hover img
+{
+ transform:scale(1.1) ;
+}
+.work:hover .layer
+{
+    height: 100%;
+
 }
