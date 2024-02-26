@@ -295,7 +295,7 @@ transition:  transform 0.5s ;
 {
     
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,5fr));
+    grid-template-columns: repeat(auto-fit,minmax(200px,5fr));
     grid-gap: 40px;
     margin-top: 50px   ;
 }
@@ -328,7 +328,7 @@ transition:  transform 0.5s ;
     flex-direction: column;
     padding: 0 40x;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     transition: 0.5s;
    
 }
@@ -367,8 +367,8 @@ margin-bottom: 20px;
 /* ============================Contact======================== */
 #Contact
 {
-    margin-top: 80px;
-    padding: 50px 0;
+    margin-top: 20px;
+    padding: 20px 0;
 }
 .contact-left
 {
@@ -420,6 +420,7 @@ margin-bottom: 20px;
     color: #fff;
     font-weight: 500; 
 }
+
 
 
 .contact-right form
