@@ -283,3 +283,30 @@ transition:  transform 0.5s ;
 {
     color: #fff;
 }
+
+/* =========================Portfolio=====================  */
+#porfolio
+{
+    padding: 50px 0;
+}
+.work-list
+{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,5fr));
+    grid-gap: 40px;
+    margin-top: 50px   ;
+}
+.work
+{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img
+{
+
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
