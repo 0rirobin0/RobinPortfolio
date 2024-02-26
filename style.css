@@ -367,7 +367,7 @@ margin-bottom: 20px;
 /* ============================Contact======================== */
 #Contact
 {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 20px 0;
 }
 .contact-left
@@ -408,7 +408,7 @@ margin-bottom: 20px;
    background-color:crimson  ;
 
 }
-#submit-btn
+.contact-right button
 {
     display: inline-block;
     width: fit-content;
@@ -440,5 +440,18 @@ form input, form textarea
     border-radius: 6px;
 }
 
+.copyright
+{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i
+{
 
+    color: crimson;
+}
 
