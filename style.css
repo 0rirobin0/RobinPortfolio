@@ -285,9 +285,11 @@ transition:  transform 0.5s ;
 }
 
 /* =========================Portfolio=====================  */
-#porfolio
-{
-    padding: 50px 0;
+#Porfolio
+{ 
+     
+     padding: 50px 0;
+  
 }
 .work-list
 {
@@ -361,3 +363,81 @@ margin-bottom: 20px;
     height: 100%;
 
 }
+
+/* ============================Contact======================== */
+#Contact
+{
+    margin-top: 80px;
+    padding: 50px 0;
+}
+.contact-left
+{
+    flex-basis: 35%;
+}
+.contact-right
+{
+    flex-basis: 60%;
+}
+.contact-left p
+{
+ font-size: medium;
+ padding-top: 10px;
+}
+.contact-left p i
+{
+    color: crimson;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.downlaod-btn
+{
+    display: inline-block;
+    margin:50px auto;
+    width: fit-content;
+    padding: 14px 50px;
+    border: 1px solid crimson;
+    border-radius: 6px;
+    background-color: transparent;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+
+}
+.downlaod-btn:hover
+{
+   background-color:crimson  ;
+
+}
+#submit-btn
+{
+    display: inline-block;
+    width: fit-content;
+    padding: 14px 50px;
+    border: 1px solid crimson;
+    border-radius: 6px;
+    background-color: crimson;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500; 
+}
+
+
+.contact-right form
+{
+    width: 100%;
+}
+form input, form textarea
+{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+
+
