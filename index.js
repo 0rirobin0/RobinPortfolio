@@ -19,7 +19,7 @@ function opentab(tabname) {
 
 // Form update to Sheets via Apps script Google
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxGv41lsLLxp-0gsBDmPCqCbBJZ_SNwO0gyQQFJrFv1indoxd7zdDmlThnMCUAnjjSgUA/execs';
+const  scriptURL = 'https://script.google.com/macros/s/AKfycbxGv41lsLLxp-0gsBDmPCqCbBJZ_SNwO0gyQQFJrFv1indoxd7zdDmlThnMCUAnjjSgUA/execs';
 const form = document.forms['submit-to-google-sheet'];
 
 form.addEventListener('submit', e => {
