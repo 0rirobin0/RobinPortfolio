@@ -14,256 +14,259 @@
 <body>
 
     <div id="header">
-
-
         <div class="container">
             <nav>
-
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Services">Services</a></li>
-                    <li><a href="#Porfolio">Porfolio</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                    <li><a href="https://0rirobin0.github.io/Resume/" target="_blank" >CV</a></li>
+                <i class="fa-solid fa-bars" id="menu-icon" onclick="toggleMenu()"></i>
+                <ul id="nav-menu">
+                    <li><a href="#" onclick="closeMenu()">Home</a></li>
+                    <li><a href="#About" onclick="closeMenu()">About</a></li>
+                    <li><a href="#Experience" onclick="closeMenu()">Experience</a></li>
+                    <li><a href="#Services" onclick="closeMenu()">Services</a></li>
+                    <li><a href="#Porfolio" onclick="closeMenu()">Portfolio</a></li>
+                    <li><a href="#Contact" onclick="closeMenu()">Contact</a></li>
+                    <li><a href="./pdf/Robin_CV.pdf" download>CV</a></li>
                 </ul>
             </nav>
         </div>
         <div class="header_text">
-
-            <p>Software Engineer</p>
-            <h1>Hi,Im <br> Md Robiul Islam <span>Robin</span> <br>from SUST,Bangladesh</h1>
+            <p>Full-Stack Software Engineer</p>
+            <h1>Hi, I'm <br> Md Robiul Islam <span>Robin</span> <br>Sylhet, Bangladesh</h1>
+            <p class="header-summary">I build things people actually use — from a conference platform handling <span>55K+ users</span> to EdTech, Telegram bots, and enterprise software.</p>
             <div class="sociallinks">
                 <a href="https://www.linkedin.com/in/md-robiul-islam-robin/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://www.facebook.com/mohammed.robin.ahmed" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://wa.me/qr/23RGV566MW2BC1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="https://github.com/0rirobin0" target="_blank"><i class="fa-brands fa-github"></i></a>
-
-
             </div>
         </div>
     </div>
 
     <!-- ====================ABOUT=================== -->
     <div id="About">
-
         <div class="container">
             <div class="row">
                 <div class="about_col_1">
-                    <img src="./images/dp.png" alt="">
+                    <img src="./images/dp.png" alt="Robin">
                 </div>
                 <div class="about_col_2">
                     <h1 class="sub-tittle">About Me</h1>
-                    <p>I am Md Robiul Islam Robin, a passionate software engineer and dedicated student currently
-                        pursuing my education at Shahjalal University of Science and Technology. My journey in the world
-                        of technology began with a curiosity to understand how software shapes our lives and a
-                        determination to contribute to its advancement.</p>
+                    <p>I'm a Software Engineering student at SUST (CGPA 3.45/4.0) and currently interning at Dynamic Solution Innovators Ltd. (DSi). I work across the full stack and care about shipping to production — not just GitHub. I've solved 300+ algorithmic problems and built systems used by tens of thousands of real users.</p>
                     <div class="tab-tittle">
                         <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('Education')">Education</p>
-                        <p class="tab-links" onclick="opentab('Experinces')">Experinces</p>
+                        <p class="tab-links" onclick="opentab('Achievements')">Achievements</p>
+                    </div>
 
-                    </div>
                     <div class="tab-contents active-tab" id="Skills">
-                        <ul>
-                            <li><span>UI/UX</span> <br>Designing Web/App Interfaces</li>
-                            <li><span>Flutter Development</span> <br>Cross-Platform Android/iOS App Development</li>
-                            <li><span>Web Development</span><br>Front-End Development</li>
-                        </ul>
+                        <div class="skills-grid">
+                            <div class="skill-cat">
+                                <span class="skill-label">Languages</span>
+                                <div class="skill-tags">
+                                    <span>C++</span><span>Python</span><span>Java</span><span>JavaScript</span><span>TypeScript</span>
+                                </div>
+                            </div>
+                            <div class="skill-cat">
+                                <span class="skill-label">Frontend</span>
+                                <div class="skill-tags">
+                                    <span>React</span><span>Next.js</span><span>Vue.js</span><span>SvelteKit</span><span>Thymeleaf</span>
+                                </div>
+                            </div>
+                            <div class="skill-cat">
+                                <span class="skill-label">Backend</span>
+                                <div class="skill-tags">
+                                    <span>Node.js</span><span>Express</span><span>Spring Boot</span>
+                                </div>
+                            </div>
+                            <div class="skill-cat">
+                                <span class="skill-label">Databases</span>
+                                <div class="skill-tags">
+                                    <span>MongoDB</span><span>PostgreSQL</span><span>MySQL</span><span>Firebase</span>
+                                </div>
+                            </div>
+                            <div class="skill-cat">
+                                <span class="skill-label">Tools</span>
+                                <div class="skill-tags">
+                                    <span>Git</span><span>Redis</span><span>Cloudinary</span><span>Vercel</span><span>Docker</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-contents" id="Experinces">
-                        <ul>
-                            <li><span>2022-current</span> <br>Designed a bunch of App interfaces</li>
-                            <li><span>2023-current</span> <br>Developed some apps</li>
-                            <li><span>2023-current</span><br>Works on some Front-Ends</li>
-                        </ul>
-                    </div>
+
                     <div class="tab-contents" id="Education">
                         <ul>
-                            <li><span>Bsc.Engg in SWE (2022-2026)</span> <br>Shahjalal University Of Science And
-                                Technology</li>
-                            <li><span>HSC Grade 5.00 (2019-2020)</span> <br>Barishal Board,Bangladesh</li>
-                            <li><span>SSC Grade 5.00 (2017-2018)</span><br>Barishal Board,Bangladesh</li>
+                            <li><span>B.Sc in Software Engineering (2022–Present)</span><br>Shahjalal University of Science and Technology — CGPA 3.45/4.0</li>
+                            <li><span>HSC — GPA 5.00 (2019–2020)</span><br>Barishal Board, Bangladesh</li>
+                            <li><span>SSC — GPA 5.00 (2017–2018)</span><br>Barishal Board, Bangladesh</li>
                         </ul>
                     </div>
 
-
-
+                    <div class="tab-contents" id="Achievements">
+                        <ul>
+                            <li><span>2nd Runner-Up</span><br>International Hackathon "Bridging Engineering & Computer Science 2025"</li>
+                            <li><span>300+ Problems Solved</span><br>Codeforces, LeetCode, UVA, VJudge</li>
+                            <li><span>Best Trainer</span><br>Bangladesh Bureau of Statistics — CPS Platform</li>
+                            <li><span>Python & Data Science</span><br>Digital Skills For Students — NumPy, DataFrames, Matplotlib</li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================Experience======================== -->
+    <div id="Experience">
+        <div class="container">
+            <h1 class="sub-tittle">Experience</h1>
+            <div class="experience-list">
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Software Engineer Intern</h3>
+                            <p class="exp-company"><i class="fa-solid fa-building"></i> Dynamic Solution Innovators Ltd. (DSi)</p>
+                        </div>
+                        <span class="exp-date">Dec 2025 – Present</span>
+                    </div>
+                    <ul class="exp-points">
+                        <li>Built a booking and availability system for <strong>MeetSync</strong> (full-stack meeting scheduler) with Google Calendar integration using Spring Boot, Thymeleaf, and PostgreSQL.</li>
+                        <li>Resolved a critical real-time data synchronisation bug in <strong>KubeKit</strong>'s cluster dashboard (GUI Kubernetes platform) using Node.js backend services.</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span>Spring Boot</span><span>Node.js</span><span>PostgreSQL</span><span>Thymeleaf</span>
+                    </div>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Operational Team Lead</h3>
+                            <p class="exp-company"><i class="fa-solid fa-users"></i> ACM SUST Chapter</p>
+                        </div>
+                        <span class="exp-date">2022 – Present</span>
+                    </div>
+                    <ul class="exp-points">
+                        <li>Leading operations for the ACM student chapter at SUST.</li>
+                        <li>Assistant General Secretary — BDSA SUST.</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span>Leadership</span><span>Event Management</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 
     <!-- =========================Services======================== -->
     <div id="Services">
-
         <div class="container">
-
             <h1 class="sub-tittle">My Services</h1>
             <div class="services-list">
-
                 <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>Flutter Development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea saepe suscipit repudiandae! Rerum,
-                        fuga.
-                        Placeat ducimus!</p>
-
-                    <a href="#">Learn More</a>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h2>Full-Stack Development</h2>
+                    <p>End-to-end web applications with React/Next.js frontends and Node.js/Spring Boot backends — shipped to production, not just GitHub.</p>
+                    <a href="#Porfolio">See Work</a>
                 </div>
-
                 <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea saepe suscipit repudiandae! Rerum,
-                        fuga.
-                        Placeat ducimus!</p>
-
-                    <a href="#">Learn More</a>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Backend & APIs</h2>
+                    <p>Scalable REST APIs, real-time systems, payment gateway integration, and cloud deployment using Express, Spring Boot, PostgreSQL, and Redis.</p>
+                    <a href="#Porfolio">See Work</a>
                 </div>
-
                 <div>
                     <i class="fa-solid fa-paint-roller"></i>
-                    <h2>UI/UX Designing</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea saepe suscipit repudiandae! Rerum,
-                        fuga.
-                        Placeat ducimus!</p>
-
-                    <a href="#">Learn More</a>
+                    <h2>UI/UX Design</h2>
+                    <p>Clean, responsive interfaces designed for real users — from conference platforms handling 55K+ visitors to EdTech dashboards.</p>
+                    <a href="#Porfolio">See Work</a>
                 </div>
-
-
             </div>
         </div>
-
-
-
-
-
-
-
     </div>
 
     <!-- =========================Portfolio===================== -->
-
     <div id="Porfolio">
-
         <div class="container">
-
-            <h1 class="sub-tittle">My Works</h1>
+            <h1 class="sub-tittle">My Projects</h1>
             <div class="work-list">
 
                 <div class="work">
-                    <img src="./images/work-1.jpg" alt="">
+                    <img src="./images/work-1.jpg" alt="Icerie 2025">
                     <div class="layer">
-                        <h3>Tank 1971 Game</h3>
-                        <p>The game is built with SFML graphics lib and c++ as language.
-                            Its supported on Windows OS!
-                        </p>
-                        <a href="https://github.com/0rirobin0/TANK-1971-Game.git" target="_blank"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Icerie 2025</h3>
+                        <p>8th International Conference platform — 55.3K users from 10+ countries. Next.js, Express, SUST E-payment, Cloudinary.</p>
+                        <a href="https://icerie2025.sust.edu" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
-
                 </div>
+
                 <div class="work">
-                    <img src="./images/work-2.jpg" alt="">
+                    <img src="./images/work-2.jpg" alt="TechAcademy">
                     <div class="layer">
-                        <h3>ShortBarta Mobile App</h3>
-                        <p>Its a Bengali News app.News in 60 words and developed using
-                            Flutter and Dart.Avaiable on Android and iOS!
-
-                        </p>
-                        <a href="https://github.com/0rirobin0/shortbarta.git" target="_blank"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>TechAcademy</h3>
+                        <p>EdTech platform for polytechnic students with course management, encrypted video streaming & custom payment. Next.js, MongoDB, Redis.</p>
+                        <a href="https://techacademy-bd.com" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
-
                 </div>
+
                 <div class="work">
-                    <img src="./images/work-3.png" alt="">
+                    <img src="./images/work-3.png" alt="Icap 2025">
                     <div class="layer">
-                        <h3>Calculator</h3>
-                        <p>The App is built with JavaFx graphics lib and Java as language.
-                            Its supported on Windows OS!
-
-                        </p>
-                        <a href="https://github.com/0rirobin0/Calculator-Java-Robin.git" target="_blank"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Icap 2025</h3>
+                        <p>International Conference on Advances in Physics — 7.5K+ users. Full-stack with dashboards, auth, and SUST E-payment gateway.</p>
+                        <a href="https://icap2025.sust.edu" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
-
                 </div>
+
                 <div class="work">
-                    <img src="./images/work-4.jpg" alt="">
+                    <img src="./images/work-4.jpg" alt="Hospital Management">
                     <div class="layer">
-                        <h3>My SUST</h3>
-                        <p>This is a UI design using Adobe XD for SUST university,Bangladesh!
-                        </p>
-                        <a href="https://xd.adobe.com/view/f53e28cc-e8e6-468d-b040-a17295a9ddbd-a06d/"
-                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Hospital Management System</h3>
+                        <p>Patient management, doctor scheduling & role-based access. React.js, Node.js, Express.js, MySQL.</p>
+                        <a href="https://github.com/0rirobin0" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
-
-
                 </div>
+
                 <div class="work">
-                    <img src="./images/Work-5.jpg" alt="">
+                    <img src="./images/Work-5.jpg" alt="Expense Tracker Bot">
                     <div class="layer">
-                        <h3>CrickBug</h3>
-                        <p>This is a UI design using Adobe XD for cricket information and entertainment !
-                        </p>
-                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Group Expense Tracker Bot</h3>
+                        <p>Telegram bot for group expense management — bill splitting, settlements, CSV export. Node.js, Firebase, Chart.js.</p>
+                        <a href="https://github.com/0rirobin0" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-
 
             </div>
-
         </div>
-
     </div>
-
 
     <!-- ============================Contact======================== -->
     <div id="Contact">
-
         <div class="container">
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-tittle">Contact Me</h1>
                     <p><i class="fa-solid fa-envelope"></i> rirobink@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>+8801844902338</p>
-                    <a href="./pdf/CV-Robin.pdf" class="downlaod-btn" download>Download CV</a>
-
-                 
-
-
-
+                    <p><i class="fa-solid fa-phone"></i> +880 1844902338</p>
+                    <p><i class="fa-brands fa-github"></i> github.com/0rirobin0</p>
+                    <a href="./pdf/Robin_CV.pdf" class="downlaod-btn" download>Download CV</a>
                 </div>
                 <div class="contact-right">
-
-                    <form method="post" Name="submit-to-google-sheet"
+                    <form method="post" name="submit-to-google-sheet"
                         action="https://script.google.com/macros/s/AKfycbxGv41lsLLxp-0gsBDmPCqCbBJZ_SNwO0gyQQFJrFv1indoxd7zdDmlThnMCUAnjjSgUA/exec">
-
-                        <input type="text" name="Name" placeholder="Name" required>
-                        <input type="email" name="Email" placeholder="Email" required>
-                        <textarea name="Message" placeholder="Message" rows="6"></textarea>
-                        <button type="submit">Submit</button>
-
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                        <button type="submit">Send Message</button>
                     </form>
                 </div>
-
             </div>
-
-
         </div>
-
     </div>
+
     <!-- ========Footer=========== -->
     <div class="copyright">
-
-        <p>Copyright &#169 Robin. Made with <i class="fa-solid fa-heart"></i> by Robin</p>
+        <p>Copyright &#169; Robin. Made with <i class="fa-solid fa-heart"></i> by Robin</p>
     </div>
 
-
-
 </body>
-
 </html>
